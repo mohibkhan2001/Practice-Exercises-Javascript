@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" style="padding: 10px 20px; font-size: 20px;" id="userInput"/>
+
+
+    <script>
+        const userInput = document.querySelector("#userInput");
+        userInput.addEventListener("input", (e) =>{
+            const inputText = e.target.value;
+
+            if(inputText.length > 10){
+                console.log("Input is valid");
+            }
+            else{
+                console.log("Invalid Input")
+            }
+
+        })
+
+   
+    </script>
+</body>
+</html>

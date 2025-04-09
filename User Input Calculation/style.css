@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    margin-top: 10rem ;
+    height: 40vh;
+    width: 25%;
+    border: 1px solid gray;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    
+}

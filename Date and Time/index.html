@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      let today = new Date();
+
+      let day = today.getDay();
+
+      let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+      console.log("Today is:",days[day]);
+    
+
+      let currHour = today.getHours();
+      let currHour12 = currHour % 12 || 12;
+      let currMin = today.getMinutes();
+      let currSec = today.getSeconds();
+      alert(
+        "Current Time is: " + currHour12 + ":" + currMin + ":" + currSec
+      );
+    </script>
+  </body>
+</html>
